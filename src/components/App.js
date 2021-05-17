@@ -22,11 +22,12 @@ class App extends Component {
       window.web3 = new Web3(window.web3.currentProvider)
     }
     else {
-      window.alert('TEST-Ethereum browser detected. You should consider trying MetaMask!')
+      window.alert('HELLO-Ethereum browser detected. You should consider trying MetaMask!')
     }
   }
 
   async loadBlockchainData() {
+    console.log('test load of blockchain');
     const web3 = window.web3
     // Load account
     const accounts = await web3.eth.getAccounts()
